@@ -1,35 +1,67 @@
-/* static/main/css/styles.css */
+
 body {
-    background-color: #f8f9fa;
     font-family: Arial, sans-serif;
+    background-color: #ffff;
 }
-
+.container {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffff ;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 h2 {
-    color: #343a40;
+    text-align: center;
     margin-bottom: 20px;
+    color: #000000;
 }
-
-.form-group {
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #000000;
+}
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+input[type="submit"] {
+    background-color: #5d5df5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 50%;
+    ;
+    
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.error-messages {
+    background-color: #ffe6e6;
+    border: 1px solid #f0b4b4;
+    color: #f44336;
+    padding: 10px;
+    border-radius: 5px;
     margin-bottom: 15px;
 }
-
-.form-control {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 15px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+.error-messages ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
 }
-
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    padding: 10px 20px;
-    border-radius: 4px;
-}
-
-.container {
-    margin-top: 50px;
+.error-messages li {
+    margin-bottom: 5px;
 }

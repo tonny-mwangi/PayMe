@@ -1,0 +1,13 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <h1>Purchase Account</h1>
+    <p>You need to purchase an account to access this feature.</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary">Purchase Account</button>
+    </form>
+</div>
+{% endblock %}
